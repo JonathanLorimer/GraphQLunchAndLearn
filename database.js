@@ -2,7 +2,7 @@ export default {
 	entities: [
 	{
 		name: 'Cronus',
-		type: 'Titan',
+		entity_type: 'Titan',
 		roman: 'Saturn',
 		consorts: ['Rhea'],
 		children: ['Zeus', 'Hera', 'Poseidon', 'Hestia', 'Hades', 'Demeter'],
@@ -11,7 +11,7 @@ export default {
 	},
 	{
 		name: 'Rhea',
-		type: 'Titan',
+		entity_type: 'Titan',
 		roman: 'Magna Mater',
 		consorts: ['Cronus'],
 		children: ['Zeus', 'Hera', 'Poseidon', 'Hestia', 'Hades', 'Demeter'],
@@ -20,7 +20,7 @@ export default {
 	},
 	{
 		name: 'Coeus',
-		type: 'Titan',
+		entity_type: 'Titan',
 		roman: 'Polus',
 		consorts: ['Pheobe'],
 		children: ['Leto'],
@@ -29,7 +29,7 @@ export default {
 	},
 	{
 		name: 'Pheobe',
-		type: 'Titan',
+		entity_type: 'Titan',
 		roman: null,
 		consorts: ['Coeus'],
 		children: ['Leto'],
@@ -38,7 +38,7 @@ export default {
 	},
 	{
 		name: 'Leto',
-		type: 'God',
+		entity_type: 'God',
 		god_of: 'Womanly Demure and Motherhood',
 		parents: ['Coeus', 'Pheobe'],
 		consorts: ['Zeus'],
@@ -49,7 +49,7 @@ export default {
 	},
 	{
 		name: 'Zeus',
-		type: 'God',
+		entity_type: 'God',
 		god_of: 'Sky and Thunder',
 		parents: ['Cronus', 'Rhea'],
 		consorts: ['Hera', 'Leto', 'Maia', 'Semele'],
@@ -60,7 +60,7 @@ export default {
 	},
 	{
 		name: 'Hera',
-		type: 'God',
+		entity_type: 'God',
 		god_of: 'Women and Family',
 		parents: ['Cronus', 'Rhea'],
 		consorts: ['Zeus'],
@@ -71,7 +71,7 @@ export default {
 	},
 	{
 		name: 'Poseidon',
-		type: 'God',
+		entity_type: 'God',
 		god_of: 'Sea, Earthquakes, and Horses',
 		parents: ['Cronus', 'Rhea'],
 		consorts: null,
@@ -82,7 +82,7 @@ export default {
 	},
 	{
 		name: 'Hestia',
-		type: 'God',
+		entity_type: 'God',
 		god_of: 'Hearth, Architecture, Domesticity',
 		parents: ['Cronus', 'Rhea'],
 		consorts: null,
@@ -93,7 +93,7 @@ export default {
 	},
 	{
 		name: 'Hades',
-		type: 'God',
+		entity_type: 'God',
 		god_of: 'Underworld',
 		parents: ['Cronus', 'Rhea'],
 		consorts: null,
@@ -104,7 +104,7 @@ export default {
 	},
 	{
 		name: 'Demeter',
-		type: 'God',
+		entity_type: 'God',
 		god_of: 'Agriculture and Harvest',
 		parents: ['Cronus', 'Rhea'],
 		consorts: null,
@@ -115,7 +115,7 @@ export default {
 	},
 	{
 		name: 'Hephaestus',
-		type: 'God',
+		entity_type: 'God',
 		god_of: 'Fire, Forge, Sculpture',
 		parents: ['Zeus', 'Hera'],
 		consorts: null,
@@ -126,7 +126,7 @@ export default {
 	},
 	{
 		name: 'Ares',
-		type: 'God',
+		entity_type: 'God',
 		god_of: 'War',
 		parents: ['Zeus', 'Hera'],
 		consorts: null,
@@ -137,7 +137,7 @@ export default {
 	},
 	{
 		name: 'Athena',
-		type: 'God',
+		entity_type: 'God',
 		god_of: 'Wisdom, Craft, and Warfare',
 		parents: ['Zeus'],
 		consorts: null,
@@ -148,7 +148,7 @@ export default {
 	},
 	{
 		name: 'Apollo',
-		type: 'God',
+		entity_type: 'God',
 		god_of: 'Arts, Archery, and Sun',
 		parents: ['Leto', 'Zeus'],
 		consorts: null,
@@ -159,7 +159,7 @@ export default {
 	},
 	{
 		name: 'Artemis',
-		type: 'God',
+		entity_type: 'God',
 		god_of: 'Hunt, Archery, Moon and Forests',
 		parents: ['Leto', 'Zeus'],
 		consorts: null,
@@ -170,7 +170,7 @@ export default {
 	},
 	{
 		name: 'Artemis',
-		type: 'God',
+		entity_type: 'God',
 		god_of: 'Wine, Fertility, and Hedonism',
 		parents: ['Semele', 'Zeus'],
 		consorts: null,
@@ -181,7 +181,7 @@ export default {
 	},
 	{
 		name: 'Semele',
-		type: 'Human',
+		entity_type: 'Human',
 		consorts: ['Zeus'],
 		children: ['Dionysus'],
 		generation: 2,

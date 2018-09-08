@@ -1,15 +1,20 @@
+import greeks from './database'
+
 export default {
 	Query: {
-		gods: async (parent, args, { greeks }) => {
-			let gods = await setTimeout(greeks.entities.filter(e => e.type === 'God'), 200)
+		allGods: async () => {
+			let gods = greeks.entities.filter(e => e.entity_type === 'God')
+			await setTimeout(() => {}, 200)
 			return gods
 		},
-		titans: async (parent, args, { greeks }) => {
-			let titans = await setTimeout(greeks.entities.filter(e => e.type === 'Titan'), 200)
+		allTitans: async () => {
+			let titans = () => greeks.entities.filter(e => e.entity_type === 'Titan')
+			await setTimeout(() => {}, 200)
 			return titans
 		},
-		human: async (parent, args, { greeks }) => {
-			let human = await setTimeout(greeks.entities.find(e => e.type === 'Human'), 200)
+		human: async () => {
+			let human = () => greeks.entities.find(e => e.entity_type === 'Human')
+			await setTimeout(() => {}, 200)
 			return human
 		},
 
