@@ -1,0 +1,49 @@
+type Query {
+	allGods: [God!]!
+	allTitans: [Titan!]!
+	human: Human!
+	allEntities: [Entity!]!
+	getGod(name: String!): God!
+	getTitan(name: String!): Titan!
+	getOlympians: [God!]!
+	
+}
+type Mutation {
+	
+}
+type God {
+	name: String
+	entity_type: String
+	god_of: String
+	parents: [Entity]
+	consorts: [Entity]
+	children: [God]
+	roman: String
+	generation: Int
+	olympian: Boolean
+}
+type Human {
+	name: String
+	entity_type: String
+	consorts: [God]
+	children: [God]
+	generation: Int,
+	olympian: Boolean
+}
+type Titan {
+	name: String
+	entity_type: String
+	roman: String
+	consorts: [Titan]
+	children: [God]
+	generation: Int
+	olympian: Boolean
+}
+type Entity {
+	name: String
+	entity_type: String
+	consorts: [Entity]
+	children: [Entity]
+	generation: Int
+	olympian: Boolean
+}

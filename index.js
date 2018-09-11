@@ -25,14 +25,21 @@ import express from 'express'
 import { ApolloServer, gql } from 'apollo-server-express'
 import fs from 'fs'
 
-const typeDefs =  gql(fs.readFileSync(__dirname.concat('/schema.js'), 'utf8'))
-import resolvers from './resolvers'
+const typeDefs =  gql(fs.readFileSync(__dirname.concat('/server/schema.gql'), 'utf8'))
+import resolvers from './server/resolvers'
 
-const PORT = 3000;
+const PORT = 4000;
 const app = express()
 const server = new ApolloServer({typeDefs, resolvers})
 server.applyMiddleware({ app })
 
+app.use(express.static(__dirname + '/view'))
+app.use(express.static(__dirname + '/dist'))
+
+app.get('/',(req,res) => {     
+	res.sendFile(__dirname + '/index.html');
+})
+
 app.listen({ port: PORT }, () => 
-console.log(`🚀 Server ready at http://localhost:3000${server.graphqlPath}`)
+	console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`)
 ) 

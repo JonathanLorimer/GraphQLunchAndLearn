@@ -52,8 +52,8 @@ export default {
 		entity_type: 'God',
 		god_of: 'Sky and Thunder',
 		parents: ['Cronus', 'Rhea'],
-		consorts: ['Hera', 'Leto', 'Maia', 'Semele'],
-		children: ['Athena', 'Apollo',  'Ares', 'Artemis', 'Dionysus', 'Hephaestus', 'Hermes'],
+		consorts: ['Hera', 'Leto', 'Semele'],
+		children: ['Athena', 'Apollo',  'Ares', 'Artemis', 'Dionysus', 'Hephaestus'],
 		roman: 'Jupiter',
 		generation: 2,
 		olympian: true
@@ -169,7 +169,7 @@ export default {
 		olympian: true
 	},
 	{
-		name: 'Artemis',
+		name: 'Dionysus',
 		entity_type: 'God',
 		god_of: 'Wine, Fertility, and Hedonism',
 		parents: ['Semele', 'Zeus'],
@@ -186,5 +186,5 @@ export default {
 		children: ['Dionysus'],
 		generation: 2,
 		olympian: false
-	},
+	}
 ]}
